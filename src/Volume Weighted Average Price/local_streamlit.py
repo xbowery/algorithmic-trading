@@ -26,5 +26,5 @@ if st.button('Calculate VWAP'):
     fig.update_layout(title=f'VWAP Price Chart for {security} for {start_date} between {start_time} and {end_time} with {interval} minutes interval')
     fig.show()
 
-    st.write(f'The TWAP Price for {security} for {start_date} between {start_time} and {end_time} with {interval} minutes interval is:')
+    st.write(f'The VWAP Price for {security} for {start_date} between {start_time} and {end_time} with {interval} minutes interval is:')
     st.write(chart_data['vwap'].tail(1).values[0])
