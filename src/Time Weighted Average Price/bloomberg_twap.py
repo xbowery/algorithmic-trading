@@ -18,3 +18,14 @@ def twap_price(ticker, start_date, end_date):
     data['Average'] = data.mean(axis=1)
     return data['Average'].mean()
 
+
+def twap_chart(ticker, start_date, end_date):
+    data = get_data(ticker, start_date, end_date)
+
+    if data.empty:
+        print("Please check the input data again.")
+        return None
+    
+    data = data[ticker]
+    data['Average'] = data.mean(axis=1)
+    return data['Average']
