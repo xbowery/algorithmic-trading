@@ -2,9 +2,13 @@
 
 This repository contains some frequently used algorithms that are used in trading.
 
-## Time Weighted Average Price
+## Execution Algorithms
+
+### Time Weighted Average Price
 
 This repository contains the algorithm for calculating the Time Weighted Average Price (TWAP) of a particular security, over a specific time period.
+
+The TWAP algorithm is used to **spread the order evenly within a specified time frame**.
 
 The mathematical expression of the TWAP algorithm can be found below:
 
@@ -28,7 +32,7 @@ $$ TWAP_n = {\frac{1}n}\sum_{i=1}^n\hat{P}_i $$
 
 This repository uses the xbbg package, so please do ensure your machine is connected to the Bloomberg Terminal before running the `bloomberg_twap.py` script.
 
-### Streamlit View
+#### Streamlit View
 
 The local Streamlit viewer can be viewed using a machine with the Bloomberg Terminal connected.
 
@@ -39,9 +43,11 @@ A separate browser tab will open showing the line chart of the TWAP price:
 ![TWAP Streamlit Viewer 2](https://github.com/xbowery/algorithmic-trading/assets/69230356/c55ef996-24d2-4d06-8a98-749851db4268)
 
 
-## (Intraday) Volume Weighted Average Price
+### (Intraday) Volume Weighted Average Price
 
 This repository contains the algorithm for calculating the intraday Volume Weighted Average Price (VWAP) of a particular security, over a specific time period.
+
+The VWAP algorithm is used to **execute trades in line with the average price over a specified period**.
 
 The mathematical expression of the VWAP algorithm can be found below:
 
@@ -61,7 +67,7 @@ where:
 $$ VWAP_i = {\frac{\sum(P_i * V_i)}{\sum(V_i)}} $$
 ```
 
-### Streamlit View
+#### Streamlit View
 
 The local Streamlit viewer can be viewed using a machine with the Bloomberg Terminal connected.
 
