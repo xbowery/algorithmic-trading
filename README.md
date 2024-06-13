@@ -72,8 +72,7 @@ $$ VWAP_i = {\frac{\sum(P_i * V_i)}{\sum(V_i)}} $$
 The local Streamlit viewer can be viewed using a machine with the Bloomberg Terminal connected.
 
 A sample view of the viewer is shown below:
-![VWAP Streamlit Viewer](https://github.com/xbowery/algorithmic-trading/assets/69230356/e279e496-3b98-463e-b4e6-8d9aed3cc4c2)
-
+![VWAP Streamlit Viewer](https://github.com/xbowery/algorithmic-trading/assets/69230356/9ef6200d-7cdd-4ea4-a050-057f08bc6775)
 
 A separate browser tab will open showing the line chart of the VWAP prices at different times:
 ![VWAP Streamlit Viewer 2](https://github.com/xbowery/algorithmic-trading/assets/69230356/18f6faba-8945-4f73-a420-e148f0874d89)
